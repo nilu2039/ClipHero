@@ -54,16 +54,6 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8AF5DA262D86D79B00D92B67 /* ClipHeroTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ClipHeroTests;
-			sourceTree = "<group>";
-		};
-		8AF5DA302D86D79B00D92B67 /* ClipHeroUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ClipHeroUITests;
-			sourceTree = "<group>";
-		};
 		8AF5DA542D86E19A00D92B67 /* ClipHero */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -104,8 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				8AF5DA542D86E19A00D92B67 /* ClipHero */,
-				8AF5DA262D86D79B00D92B67 /* ClipHeroTests */,
-				8AF5DA302D86D79B00D92B67 /* ClipHeroUITests */,
 				8AF5DA132D86D79A00D92B67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,9 +143,6 @@
 			dependencies = (
 				8AF5DA252D86D79B00D92B67 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				8AF5DA262D86D79B00D92B67 /* ClipHeroTests */,
-			);
 			name = ClipHeroTests;
 			packageProductDependencies = (
 			);
@@ -179,7 +164,6 @@
 				8AF5DA2F2D86D79B00D92B67 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				8AF5DA302D86D79B00D92B67 /* ClipHeroUITests */,
 				8AF5DA542D86E19A00D92B67 /* ClipHero */,
 			);
 			name = ClipHeroUITests;
