@@ -6,27 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		8AF5DA242D86D79B00D92B67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8AF5DA0A2D86D79A00D92B67 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8AF5DA112D86D79A00D92B67;
-			remoteInfo = ClipHero;
-		};
-		8AF5DA2E2D86D79B00D92B67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8AF5DA0A2D86D79A00D92B67 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8AF5DA112D86D79A00D92B67;
-			remoteInfo = ClipHero;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		8AF5DA122D86D79A00D92B67 /* ClipHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AF5DA232D86D79B00D92B67 /* ClipHeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipHeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AF5DA2D2D86D79B00D92B67 /* ClipHeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipHeroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -41,16 +22,6 @@
 			);
 			target = 8AF5DA112D86D79A00D92B67 /* ClipHero */;
 		};
-		8AF5DA5A2D86E19A00D92B67 /* Exceptions for "ClipHero" folder in "ClipHeroUITests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Assets.xcassets,
-				ClipHeroApp.swift,
-				ContentView.swift,
-				"Preview Content/Preview Assets.xcassets",
-			);
-			target = 8AF5DA2C2D86D79B00D92B67 /* ClipHeroUITests */;
-		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -58,7 +29,6 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				8AF5DA592D86E19A00D92B67 /* Exceptions for "ClipHero" folder in "ClipHero" target */,
-				8AF5DA5A2D86E19A00D92B67 /* Exceptions for "ClipHero" folder in "ClipHeroUITests" target */,
 			);
 			path = ClipHero;
 			sourceTree = "<group>";
@@ -67,20 +37,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		8AF5DA0F2D86D79A00D92B67 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8AF5DA202D86D79B00D92B67 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8AF5DA2A2D86D79B00D92B67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -102,8 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				8AF5DA122D86D79A00D92B67 /* ClipHero.app */,
-				8AF5DA232D86D79B00D92B67 /* ClipHeroTests.xctest */,
-				8AF5DA2D2D86D79B00D92B67 /* ClipHeroUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,49 +84,6 @@
 			productReference = 8AF5DA122D86D79A00D92B67 /* ClipHero.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8AF5DA222D86D79B00D92B67 /* ClipHeroTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8AF5DA3A2D86D79B00D92B67 /* Build configuration list for PBXNativeTarget "ClipHeroTests" */;
-			buildPhases = (
-				8AF5DA1F2D86D79B00D92B67 /* Sources */,
-				8AF5DA202D86D79B00D92B67 /* Frameworks */,
-				8AF5DA212D86D79B00D92B67 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8AF5DA252D86D79B00D92B67 /* PBXTargetDependency */,
-			);
-			name = ClipHeroTests;
-			packageProductDependencies = (
-			);
-			productName = ClipHeroTests;
-			productReference = 8AF5DA232D86D79B00D92B67 /* ClipHeroTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		8AF5DA2C2D86D79B00D92B67 /* ClipHeroUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8AF5DA3D2D86D79B00D92B67 /* Build configuration list for PBXNativeTarget "ClipHeroUITests" */;
-			buildPhases = (
-				8AF5DA292D86D79B00D92B67 /* Sources */,
-				8AF5DA2A2D86D79B00D92B67 /* Frameworks */,
-				8AF5DA2B2D86D79B00D92B67 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8AF5DA2F2D86D79B00D92B67 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				8AF5DA542D86E19A00D92B67 /* ClipHero */,
-			);
-			name = ClipHeroUITests;
-			packageProductDependencies = (
-			);
-			productName = ClipHeroUITests;
-			productReference = 8AF5DA2D2D86D79B00D92B67 /* ClipHeroUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -185,14 +96,6 @@
 				TargetAttributes = {
 					8AF5DA112D86D79A00D92B67 = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					8AF5DA222D86D79B00D92B67 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 8AF5DA112D86D79A00D92B67;
-					};
-					8AF5DA2C2D86D79B00D92B67 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 8AF5DA112D86D79A00D92B67;
 					};
 				};
 			};
@@ -211,28 +114,12 @@
 			projectRoot = "";
 			targets = (
 				8AF5DA112D86D79A00D92B67 /* ClipHero */,
-				8AF5DA222D86D79B00D92B67 /* ClipHeroTests */,
-				8AF5DA2C2D86D79B00D92B67 /* ClipHeroUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8AF5DA102D86D79A00D92B67 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8AF5DA212D86D79B00D92B67 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8AF5DA2B2D86D79B00D92B67 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,34 +136,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AF5DA1F2D86D79B00D92B67 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8AF5DA292D86D79B00D92B67 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8AF5DA252D86D79B00D92B67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8AF5DA112D86D79A00D92B67 /* ClipHero */;
-			targetProxy = 8AF5DA242D86D79B00D92B67 /* PBXContainerItemProxy */;
-		};
-		8AF5DA2F2D86D79B00D92B67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8AF5DA112D86D79A00D92B67 /* ClipHero */;
-			targetProxy = 8AF5DA2E2D86D79B00D92B67 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8AF5DA352D86D79B00D92B67 /* Debug */ = {
@@ -455,74 +315,6 @@
 			};
 			name = Release;
 		};
-		8AF5DA3B2D86D79B00D92B67 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 83CQ9Z5NLN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nilanjan.ClipHeroTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClipHero.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClipHero";
-			};
-			name = Debug;
-		};
-		8AF5DA3C2D86D79B00D92B67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 83CQ9Z5NLN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nilanjan.ClipHeroTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClipHero.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClipHero";
-			};
-			name = Release;
-		};
-		8AF5DA3E2D86D79B00D92B67 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 83CQ9Z5NLN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nilanjan.ClipHeroUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ClipHero;
-			};
-			name = Debug;
-		};
-		8AF5DA3F2D86D79B00D92B67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 83CQ9Z5NLN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nilanjan.ClipHeroUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ClipHero;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -540,24 +332,6 @@
 			buildConfigurations = (
 				8AF5DA382D86D79B00D92B67 /* Debug */,
 				8AF5DA392D86D79B00D92B67 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8AF5DA3A2D86D79B00D92B67 /* Build configuration list for PBXNativeTarget "ClipHeroTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8AF5DA3B2D86D79B00D92B67 /* Debug */,
-				8AF5DA3C2D86D79B00D92B67 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8AF5DA3D2D86D79B00D92B67 /* Build configuration list for PBXNativeTarget "ClipHeroUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8AF5DA3E2D86D79B00D92B67 /* Debug */,
-				8AF5DA3F2D86D79B00D92B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
