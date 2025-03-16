@@ -24,10 +24,8 @@ struct ContentView: View {
                 }
                 .buttonStyle(PlainButtonStyle())
                 
-                Divider()
-                
             }
-            
+            Divider()
             Button("Quit", systemImage: "power") {
                    NSApplication.shared.terminate(nil)
             }
@@ -35,8 +33,6 @@ struct ContentView: View {
             
         }
         .padding()
-        .frame(maxWidth: 300)
-        .fixedSize(horizontal: true, vertical: false)
     }
 }
 

@@ -21,11 +21,10 @@ class ClipboardHistoryModel: Identifiable, ObservableObject {
     }
     
     func startClipboardMonitoring() {
-        print("Monitoring started")
         var lastChangeCount = NSPasteboard.general.changeCount
         
-        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { _ in
-                let currentChangeCount = NSPasteboard.general.changeCount
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
+            let currentChangeCount = NSPasteboard.general.changeCount
             if lastChangeCount != currentChangeCount {
                 lastChangeCount = currentChangeCount
                 if let string = NSPasteboard.general.string(forType: .string) {

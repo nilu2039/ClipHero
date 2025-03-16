@@ -14,7 +14,6 @@ struct ClipHeroApp: App {
     var body: some Scene {
         MenuBarExtra("ClipHerolist.bullet.clipboard", systemImage: "list.bullet.clipboard") {
             ContentView(clipboardHistory: clipboardHistory)
-//                .frame(width: 100)
         }
         .menuBarExtraStyle(.menu)
     }
