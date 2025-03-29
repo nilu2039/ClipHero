@@ -13,7 +13,7 @@ struct ContentView: View {
         VStack {
             Text("Clipboard Contents: ")
                 .font(.headline)
-            
+
             ForEach(clipboardHistory.clipboardContents) { content in
                 Button(action: {
                     clipboardHistory.copyToClipboard(content)
@@ -23,14 +23,19 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 .buttonStyle(PlainButtonStyle())
-                
+
             }
             Divider()
-            Button("Quit", systemImage: "power") {
-                   NSApplication.shared.terminate(nil)
+            Button("Clear", systemImage: "xmark.circle") {
+                clipboardHistory.clearContents()
             }
             .labelStyle(.titleAndIcon)
-            
+            Divider()
+            Button("Quit", systemImage: "power") {
+                NSApplication.shared.terminate(nil)
+            }
+            .labelStyle(.titleAndIcon)
+
         }
         .padding()
     }

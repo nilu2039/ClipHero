@@ -15,14 +15,14 @@ struct ClipboardContent: Identifiable {
 
 class ClipboardHistoryModel: Identifiable, ObservableObject {
     @Published var clipboardContents = [ClipboardContent]()
-    
+
     init() {
         self.startClipboardMonitoring()
     }
-    
+
     func startClipboardMonitoring() {
         var lastChangeCount = NSPasteboard.general.changeCount
-        
+
         Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
             let currentChangeCount = NSPasteboard.general.changeCount
             if lastChangeCount != currentChangeCount {
@@ -38,12 +38,14 @@ class ClipboardHistoryModel: Identifiable, ObservableObject {
             }
         }
     }
-    
+
     func copyToClipboard(_ clipboardContent: ClipboardContent) {
         NSPasteboard.general.clearContents()
         NSPasteboard.general.setString(clipboardContent.txt, forType: .string)
         self.clipboardContents.removeAll { $0.id == clipboardContent.id }
     }
-    
+
+    func clearContents() {
+        self.clipboardContents.removeAll()
+    }
 }
-    
