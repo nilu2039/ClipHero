@@ -15,6 +15,6 @@ struct ClipHeroApp: App {
         MenuBarExtra("ClipHerolist.bullet.clipboard", systemImage: "list.bullet.clipboard") {
             ContentView(clipboardHistory: clipboardHistory)
         }
-        .menuBarExtraStyle(.menu)
+        .menuBarExtraStyle(.window)
     }
 }
